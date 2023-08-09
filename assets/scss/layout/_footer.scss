@@ -1,4 +1,145 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+/* footer */
+footer{
+  background-color:$primary-500;
+  padding:60px 0;
+}
+
+.footer-link{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-bottom:36px;
+}
+
+
+.footer-menu{
+  display:flex;
+  li{
+    margin-right:48px;
+  };
+  a{
+    color:#fff;
+  };
+}
+
+.footer-social-icon{
+  display:flex;
+  li{
+    margin-left:32px;
+  };
+  img{
+    width:48px;
+    height:48px;
+  }
+}
+
+
+.phone{
+  display:flex;
+  align-items:center;
+  color:#fff;
+  font-size:$text-4xl;
+  margin-bottom:8px;
+  span{
+    margin-right:16px;
+    font-size:$text-4xl;
+  }
+}
+.mail{
+  display:flex;
+  align-items:center;
+  color:#fff;
+  font-size:$text-4xl;
+  margin-bottom:8px;
+  
+  span{
+    margin-right:16px;
+    font-size:$text-4xl;
+  }
+}
+
+
+.footer-top{
+  border-bottom:1px solid #fff;
+  padding-bottom:32px;
+}
+
+.footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  align-items:center;
+  color:#fff;
+  padding-top:32px;
+    ul{
+      display:flex;
+      flex-wrap:wrap;
+    };
+}
+
+.privacy a{
+  color:#fff;
+  font-size:$text-sm;
+  margin-left:48px;
+}
+
+@media (max-width:767px){
+   
+  footer{
+    padding:24px 0;
+}
+ 
+  
+  .footer-menu{
+    display: none;
+    li{
+      margin-right:0px;
+    };
+    a{
+      display:none;
+    }; 
+  }
+
+  .footer-social-icon{
+    li{
+      margin-left:8px;
+    };
+    img{
+      width:24px;
+      height:24px;
+    }
+      
+  }
+
+  .phone,.mail,.phone span,.mail span{
+      font-size:$text-base;
+  }
+  .footer-top{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-bottom:16px;
+  }
+
+  .footer-bottom{
+    line-height: 1.5;
+    p{
+      padding-bottom:8px;
+    }
+    padding-top:16px;
+  }
+  
+  .privacy {
+    
+    li{
+      width:100%;
+      padding-bottom:8px;
+    }
+    a{
+      margin-left:0px;
+      font-size:$text-base;
+    }
+    
+}
 }

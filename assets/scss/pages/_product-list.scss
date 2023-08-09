@@ -1,0 +1,145 @@
+.tab{
+    max-width: 1296px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+    display:flex;
+    li{
+        width:33%;
+        text-align: center;
+        padding:24px 0;
+        font-size:32px;
+        font-weight: 500;
+    }
+    a{ color: #000000;}
+    a:hover{color:$primary-500}
+    .active{
+        border-bottom:8px solid #AA0601;
+    }
+}
+
+.product-header{
+    display:flex;
+    height:296px;
+  
+}
+
+
+.product-header-img01{
+    width:50%;
+    background-image:url('../img/product-header-1.png');
+    background-size:cover;
+}
+.product-header-img02{
+    width:50%;
+    background-image:url('../img/product-header-2.png');
+    background-size:cover;
+}
+
+
+.sub-title{
+    text-align: center;
+    margin-bottom:32px;
+    h3{
+        font-size: 42px;
+        font-weight: 500;
+    }
+    h4{
+        font-size:$text-3xl;
+    }
+}
+
+.product-list{
+    line-height: 1.5;
+   
+}
+
+.product-grid{
+    margin-top:32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.product-card{
+    width: 22%;
+    margin-right: 24px;
+    margin-bottom:80px;
+}
+
+.sunglasses-card{
+    width: 31%;
+    margin-right: 24px;
+    margin-bottom:80px;
+}
+
+.product-title{
+    font-size:$text-xl;
+    display:flex;
+    justify-content: space-between;
+    h6:last-child{
+        color:$primary-500;
+        font-weight: 500;
+    }
+}
+
+.product-color{
+    a{
+        display: inline-block;
+        width: 24px;
+        height:24px;
+        border-radius: 4px;
+    }
+    .color1{
+        background-color: #5F3E2D;
+    }
+    .color2{
+        background-color: #B75929;
+    }
+}
+
+
+
+
+@media (max-width:767px){
+
+    
+
+    .tab{
+        padding-right: 0px;
+	    padding-left: 0px;
+        li{
+            padding:16px 0;
+            font-size:$text-base;
+        }
+        a{ color: #000000;}
+    }
+    .product-header{
+        height:136px;
+      
+    }
+    .product-header-img01{
+        background-image:url('../img/product-header-sm-1.png');
+    }
+    .product-header-img02{
+        background-image:url('../img/product-header-sm-2.png');
+    }
+    .product-card,.sunglasses-card{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom:24px;
+    }
+
+    .sub-title{
+        margin-bottom:24px;
+        h3,h4{
+            font-size: $text-xl;
+        }
+       
+    }
+
+
+
+    
+  
+  }

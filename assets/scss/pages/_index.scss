@@ -1,3 +1,317 @@
-.index-title {
-  font-size: 100px;
+
+/* banner */
+
+.banner{
+    padding:296px 0;
+    background-image:url(../img/home-header.png);
+    background-size:cover;
+}
+
+.slogan{
+    text-align:right;
+
+    h3,h2{
+      color:$primary-700;
+      line-height:1.5;
+    };
+    h3{
+      font-size: $text-4xl;
+    };
+    h2{
+      font-size:$text-6xl;
+      margin-bottom:10px;
+      font-weight:bold;
+    };
+    a{
+      color: #fff;
+      font-size:$text-lg;
+      padding:6px 12px;
+      background-color:$primary-500;
+    }
+
+}
+
+
+
+
+/* feature */
+
+.feature{
+    background-color:#FBF2F2;
+    h3{
+      font-size:$text-xl;
+      line-height:1.5;
+      color:$primary-700;
+      font-weight:bold;
+      text-align:center;
+      margin-top:24px;
+      margin-bottom:8px;
+    };
+}
+
+.title{
+    font-size:$text-5xl;
+    font-weight:bold;
+    text-align:center;
+    color:$primary-700;
+    margin-bottom:32px;
+}
+
+.feature-list{
+    display:flex;
+    flex-wrap:wrap;
+    img{
+      display:block; 
+      margin:auto;
+      width:83px;
+      height:auto;
+      text-align:center;
+    };
+    li{
+      width:25%;
+      padding-right:24px;
+    };
+    p{
+      line-height:1.5;
+    }
+}
+
+
+/* classic */
+
+
+
+.classic-list{
+    display:flex;
+    flex-wrap:wrap;
+    li{
+      width:33%;
+      padding-right:24px;
+    };
+    h2{
+      font-size:$text-5xl;
+      font-weight:bold;
+      color:$primary-500;
+      text-align:center;
+      margin-top:8px;
+      font-style:italic;
+    };
+}
+
+
+
+/* design */
+
+.design{
+
+    background-image:url(../img/index-bg.png);
+}
+
+.design .title{
+    color:#fff;
+}
+
+
+.design-list{
+    display:flex;
+    flex-wrap:wrap;
+    li{
+      width:50%;
+    };
+    img{
+      display:block;
+    };
+    h2{
+      color:$primary-500;
+      font-size:$text-5xl;
+      font-weight:bold;
+      text-align:center;
+      padding:8px 0;
+      background-color:#fff;
+    };
+
+
+
+}
+
+
+.bg-design01, .bg-design02{
+    width:100%;
+    height:240px;
+    background-size:cover;
+}
+
+.bg-design01{
+    background-image:url(../img/home-section4-1.png);
+}
+.bg-design02{
+    background-image:url(../img/home-section4-2.png);
+}
+
+
+/* recommend */
+
+.recommend-list{
+    display:flex;
+    flex-wrap:wrap;
+    li{
+      width:23%;
+      margin-right:24px;
+      line-height:1.5;
+      box-shadow: 0px 2px 6px #00000029;
+    };
+}
+
+
+.recomment-list-content{
+    display:flex;
+    flex-direction:column;
+    padding:16px;
+    justify-content:space-between;
+    span{
+      color:#707070;
+    }
+}
+
+
+.recomment-list-title>p{
+    margin-bottom:8px;
+}
+
+.recomment-list-title{
+    margin-bottom:72px;
+}
+
+/* contact */
+
+.contact{
+    background-color:$gray-200;
+    h4{
+      font-size:$text-lg;
+      margin-top:48px;
+      margin-bottom:24px;
+      line-height:1.5;
+    };
+
+}
+
+.contact>.container{
+   max-width:50%;
+   margin:0 auto;
+}
+
+.input{
+    margin-bottom:16px;
+    input{
+      width:100%;
+      padding:6px 12px;
+      background-color:transparent;
+      border:1px solid #000;
+    };
+    label{
+      display:block;
+      margin-bottom:8px;
+    };
+
+
+}
+
+.opnion textarea{
+    width: 100%;
+    height: 136px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: transparent;
+    resize: none;
+}
+
+.checkbox-text{
+    line-height: 1.5;
+}
+
+.btn{
+    text-align: center;
+    margin-top:48px;
+    input{
+      padding:16px;
+      background-color:$primary-500;
+      color:#fff;
+      border:none;
+      width:32%;
+    }
+}
+
+
+
+@media (max-width:992px){
+  .feature li{
+    width:50%;
+  }
+}
+
+
+@media (max-width:767px){
+   
+
+    .banner{
+        padding:144px 24px;
+        background-image:url(../img/home-header-sm.png);
+    }
+
+    .slogan{
+        h3{
+          font-size:$text-base;
+        };
+        h2{
+          font-size:text-xl;
+        }
+    }
+
+
+    .title{
+        font-size:text-xl;
+    }
+    
+    .feature-list{
+      h3{
+          font-size:text-xl;
+      } 
+      li{
+        width:100%;
+        margin-bottom:24px;
+      }
+    }
+
+
+    .classic-list li{
+        width:100%;
+        padding-right:0px;
+        margin-bottom:24px;
+    }
+
+    .design-list li{
+        width:100%;
+        margin-bottom:24px;
+    }
+    .bg-design01{
+        background-image:url(../img/home-section4-1-sm.png);
+    }
+    .bg-design02{
+        background-image:url(../img/home-section4-2-sm.png);
+    }
+
+    .recommend-list li{
+        width:100%;
+        margin-bottom:16px;
+    }
+
+    .contact h4{
+        font-size:$text-base;
+    }
+
+    .contact>.container{
+        max-width:100%;
+     }
+
 }

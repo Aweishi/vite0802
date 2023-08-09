@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <%- include('./layout/header') -%>
+  
+    <div class=" section location">
+        <div class="header-title container">
+            <h3>門市據點</h3>
+            <div class="location-select">
+                <h5>選擇地區</h5>
+                <select>
+                    <option>台北市</option>
+                    <option>桃園縣</option>
+                    <option>新竹縣</option>
+                    <option>苗栗縣</option>
+                    <option>高雄市</option>
+                    <option>屏東縣</option>
+                </select>
+            </div>
+        </div>
+        <div class="location-content container">
+            <ul class="location-card">
+                <img src="../assets/img/store-1.png" alt="">
+                <li class="location-title">
+                    <h5>台北中山旗艦店</h5>
+                </li>
+                <ul class="location-info">
+                    <li><span class="material-symbols-outlined">
+                        call
+                        </span>
+                        電話：(02)000-1234
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                        schedule
+                        </span>
+                        營業時間：10:00-21:00
+                        
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            location_on
+                            </span>
+                            地址：台北市中山區南京東路25巷2-1號
+                            
+                    </li>
+                </ul>
+            </ul>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14457.717521158194!2d121.50118088249803!3d25.053431935018878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6LevMjXlt7cyLTHomZ8!5e0!3m2!1szh-TW!2stw!4v1691569294914!5m2!1szh-TW!2stw" width="100%" height="414px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+  
+       
+       
+
+    </div>
+
+
+
+
+
+    <%- include('./layout/footer') -%>
+
+
+
+</body>
+
+</html>
